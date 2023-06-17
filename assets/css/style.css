@@ -1,0 +1,34 @@
+body {
+    background-image: url("../images/backgroundimage.jpg");
+    background-size: 1700px;
+}
+
+.heading {
+    text-align: center;
+    font-family: URW Chancery L, cursive;
+    font-size: 3.8em;
+    margin-top: 0;
+    color: blue;
+}
+
+.welcome-line {
+    text-align: right;
+    font-family: Apple Chancery, cursive;
+    font-size: 2.2em;
+    margin-bottom: 0;
+    padding-right: 5%;
+    color: orange;
+    font-weight: bold;
+
+}
+
+.about-quiz {
+    text-align: right;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 1.7em;
+    padding-left: 60%;
+    text-align: justify;
+    color: green;
+
+
+}
