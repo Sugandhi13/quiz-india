@@ -9,41 +9,45 @@
 </head>
 
 <body>
-    <div>
-        <h1 class="heading">Quiz India</h1>
-    </div>
+    <header>Quiz India</header>
     <div class="main-area">
-        <div>
-            <p class="welcome-line">Welcome to Incredible India Quiz :)</p>
+        <div class="welcome-line">
+            <h3>Welcome to Incredible India Quiz</h3>
         </div>
-        <div>
-            <p class="about-quiz">This Quiz is just for fun to test your knowledge about India and its culture in fun
-                game
-                manner. This game have 3 levels easy, medium and hard. Correct question will give
-                 1 marks and incorrect
-                answer will reduce
-                1 marks from your score.
+        <div class="about-quiz">
+            <p>
+                This Quiz is just for fun and let you discover how much you know
+                about a beautiful, historical rich, culturally diverse country called 
+                INDIA. 
+            </p>
+            <p>
+                This game have 3 levels 'Easy', 'Medium' and 'Hard'. Each level consist 
+                of 5 unique questions about India. When you give correct answer of 
+                a question it will help you to score 1 point. Whereas for every incorrect 
+                answer you will loose 1 point. You need to score atleast 4 points to move 
+                to next level. 
+            </p>
+            <p>
+                By default, the game will start from 'Easy' level. But you have 
+                option to choose either 'Medium' or 'Hard' difficulty levels as 
+                well. There is no limit how many times you can restart this game.
+            </p>
+            <p>
+                Please Enter you name, select difficulty level below and click
+                on 'Start Quiz' button to start the game. Good luck :)
+            </p>
         </div>
         <div class="your-name">
-            <form action="quiz.html" method="GET">
-                <label for="yname">Name:</label>
+            <form id="username" action="quiz.html" method="GET">
+                <label for="yname">Name</label>
                 <input type="text" id="yname" name="yname" required><br><br>
-                <label for="level">Level:</label>
-                <!--    <input id="easy" name="level" type="radio" value="easy" checked>
-                <label for="easy">Easy</label>
-                <input id="medium" name="level" type="radio" value="medium">
-                <label for="medium">Medium</label>
-                <input id="hard" name="level" type="radio" value="hard">
-                <label for="hard">Hard</label>-->
-                <div class="switch">
-                    <input name="level" id="easy" type="radio" checked />
-                    <label for="easy" class="switch__label">Easy</label>
-                    <input name="level" id="medium" type="radio" />
-                    <label for="medium" class="switch__label">Medium</label>
-                    <input name="level" id="hard" type="radio" />
-                    <label for="hard" class="switch__label">Hard</label>
-                    <div class="switch__indicator" />
-                </div>
+                <label for="level">Level</label>
+                <input name="level" id="easy" type="radio" checked />
+                <label for="easy" class="level">Easy</label>
+                <input name="level" id="medium" type="radio" />
+                <label for="medium" class="level">Medium</label>
+                <input name="level" id="hard" type="radio" />
+                <label for="hard" class="level">Hard</label>
                 <br><br>
                 <input type="submit" id="startquiz" value="Start Quiz">
             </form>
