@@ -4,8 +4,15 @@
     border: 0;
 }
 
+/* Body */
+
 body {
-    font-family: Verdana, sans-serif;
+    background-image: url("../images/backgroundimage.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: system-ui,
+        Arial,
+        sans-serif;
 }
 
 header {
@@ -34,20 +41,11 @@ h3 {
 }
 
 p {
-    font-family: system-ui, 
+    font-family: system-ui,
         Arial,
         sans-serif;
     color: green;
 }
-
-/* Body */
-
-body {
-    background-image: url("../images/backgroundimage.jpg") ;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
 
 .main-area {
     background-color: lightgoldenrodyellow;
@@ -95,7 +93,7 @@ label {
     background-color: orange;
     border: 1px solid orange;
     border-radius: 12px;
-    margin: 0em 2em 0em 0.5em;   
+    margin: 0em 2em 0em 0.5em;
 }
 
 .level:hover {
@@ -106,8 +104,8 @@ label {
 
 #startquiz {
     font-family: system-ui,
-            Arial,
-            sans-serif;
+        Arial,
+        sans-serif;
     font-size: large;
     font-weight: bold;
     color: white;
@@ -124,38 +122,38 @@ label {
     border: 1px solid blueviolet;
 }
 
-
 /* Quiz Page */
-.hello-area {
-    float:left;
+.user-info {
     text-align: center;
     font-family: system-ui,
         Arial,
         sans-serif;
-    font-size: 2.2em;
-    padding: 0em 1em;
+    font-size: 1.5em;
+    padding: 0em 5em;
     color: orange;
     font-weight: bold;
 }
 
-.score-area {
-    float: right;
-    text-align: center;
-    font-family: system-ui,
-        Arial,
-        sans-serif;
-    font-size: 2.2em;
-    padding: 0em 1em;
-    color: orange;
-    font-weight: bold;
+#hello-area {
+    color: green;
+    text-transform: capitalize;
+}
+
+#level-area {
+    color: green;
+    text-transform: capitalize;
+}
+
+#score-area {
+    color: green;
 }
 
 .question-area {
     font-family: system-ui,
         Arial,
         sans-serif;
-    font-size: 1.7em;
-    text-align: justify;
+    font-size: 1.5em;
+    text-align: left;
     color: green;
-    padding: 0em 1em;
+    padding: 1em;
 }

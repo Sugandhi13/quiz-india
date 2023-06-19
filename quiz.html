@@ -11,25 +11,24 @@
 <body>
     <header>Quiz India</header>
     <div class="main-area">
-        <div class="hello-area">
-            <span>Hello Contestants!</span>
-        </div>
-        <div class="score-area">
-            <span>Your Score</span>
+        <div class="user-info">
+            Player Name: <span id="hello-area"></span>
+            Difficulty Level: <span id="level-area"></span>
+            Score: <span id="score-area"></span>
         </div>
         <div class="question-area">
-            <p>The question will display here</p>
+            <p id="question">The question will display here</p>
         </div>
         <div class="options">
-                <label for="level">Options</label>
-                <input name="level" id="easy" type="radio" checked> Options1</input>
-                <label for="easy" class="level">Options_1</label>
-                <input name="level" id="medium" type="radio" />
-                <label for="medium" class="level">Options_2</label>
-                <input name="level" id="hard" type="radio" />
-                <label for="hard" class="level">Options_3</label>
-                <input name="level" id="hard" type="radio" />
-                <label for="hard" class="level">Options_4</label>
+            <label for="level">Options</label>
+            <input name="level" id="easy" type="radio" checked />
+            <label for="easy" class="level">Options_1</label>
+            <input name="level" id="medium" type="radio" />
+            <label for="medium" class="level">Options_2</label>
+            <input name="level" id="hard" type="radio" />
+            <label for="hard" class="level">Options_3</label>
+            <input name="level" id="hard" type="radio" />
+            <label for="hard" class="level">Options_4</label>
             <br><br>
             <input type="submit" id="startquiz" value="Submit">
         </div>
