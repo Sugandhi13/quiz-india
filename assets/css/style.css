@@ -29,8 +29,13 @@ header {
 }
 
 /* headings */
-h1,
-h2,
+h2 {
+    font-family: system-ui,
+        Arial,
+        sans-serif;
+    color: green;
+}
+
 h3 {
     font-family: system-ui,
         Arial,
@@ -117,6 +122,26 @@ label {
 }
 
 #startquiz:hover {
+    color: yellow;
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+.btn {
+    font-family: system-ui,
+        Arial,
+        sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 12px;
+    padding: 0.5em 1em;
+    margin-left: 2em;
+}
+
+.btn:hover {
     color: yellow;
     background-color: blueviolet;
     border: 1px solid blueviolet;

@@ -16,19 +16,16 @@
             Difficulty Level: <span id="level-area"></span>
             Score: <span id="score-area"></span>
         </div>
-        <div class="question-area">
-            <p id="question">The question will display here</p>
-        </div>
-        <div class="options">
-            <label for="level">Options</label>
-            <input name="level" id="easy" type="radio" checked />
-            <label for="easy" class="level">Options_1</label>
-            <input name="level" id="medium" type="radio" />
-            <label for="medium" class="level">Options_2</label>
-            <input name="level" id="hard" type="radio" />
-            <label for="hard" class="level">Options_3</label>
-            <input name="level" id="hard" type="radio" />
-            <label for="hard" class="level">Options_4</label>
+        <div class="question-area" id="quiz">
+            <h2 id="question">The question will display here</h2>
+            <input type="radio" name="answer" id="opt_a" class="answer">
+            <label for="opt_a" id="a_text" class="level">Option A</label>
+            <input type="radio" name="answer" id="opt_b" class="answer">
+            <label for="opt_b" id="b_text" class="level">Option B</label>
+            <input type="radio" name="answer" id="opt_c" class="answer">
+            <label for="opt_c" id="c_text" class="level">Option C</label>
+            <input type="radio" name="answer" id="opt_d" class="answer">
+            <label for="opt_d" id="d_text" class="level">Option D</label>
             <br><br>
             <input type="submit" id="startquiz" value="Submit">
         </div>
