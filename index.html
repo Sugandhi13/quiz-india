@@ -23,9 +23,8 @@
             <p>
                 This game have 3 levels 'Easy', 'Medium' and 'Hard'. Each level consist
                 of 5 unique questions about India. When you give correct answer of
-                a question it will help you to score 1 point. Whereas for every incorrect
-                answer you will loose 1 point. You need to score atleast 4 points to move
-                to next level.
+                a question it will help you to score 10 point. Whereas for every incorrect
+                answer you will loose 5 point.
             </p>
             <p>
                 By default, the game will start from 'Easy' level. But you have
@@ -42,13 +41,14 @@
                 <label for="yname">Name</label>
                 <input type="text" id="yname" name="yname" required><br><br>
                 <label for="level">Level</label>
-                <input name="level" id="easy" type="radio" value="easy" checked />
-                <label for="easy" class="level">Easy</label>
-                <input name="level" id="medium" type="radio" value="medium" />
-                <label for="medium" class="level">Medium</label>
-                <input name="level" id="hard" type="radio" value="hard" />
-                <label for="hard" class="level">Hard</label>
-                <br><br>
+                <div id="radiobtn">
+                    <input name="level" id="easy" type="radio" value="easy" checked />
+                    <label for="easy" class="level">Easy</label><br><br>
+                    <input name="level" id="medium" type="radio" value="medium" />
+                    <label for="medium" class="level">Medium</label><br><br>
+                    <input name="level" id="hard" type="radio" value="hard" />
+                    <label for="hard" class="level">Hard</label><br><br>
+                </div>
                 <input type="submit" id="startquiz" value="Start Quiz">
             </form>
         </div>

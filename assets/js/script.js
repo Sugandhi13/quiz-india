@@ -10,6 +10,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 let correctAnswer = 0;
 let choice;
+let username;
 
 
 let easyQuest = [
@@ -147,6 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("hello-area").innerHTML = params.get('yname');
     document.getElementById("level-area").innerHTML = params.get('level');
     document.getElementById("score-area").innerHTML = score;
+    username = params.get('yname');
     choice = params.get('level');
     runQuiz(choice);
 });
@@ -202,21 +204,27 @@ startQuiz.addEventListener('click', function () {
             questionLevel = hardQuest;
         }
         if (answer === questionLevel[currentQuestionIndex].rightAnswer) {
-            score++;
+            score = score + 10;
             correctAnswer++;
         } else {
-            score = score - 1;
+            score = score - 5;
         }
         currentQuestionIndex++;
         if (currentQuestionIndex < questionLevel.length) {
             runQuiz(choice);
         } else {
             quiz.innerHTML = `
-                <h2>You answered ${correctAnswer}/${questionLevel.length} questions correctly</h2>
-                <p>Your total score is ${score}.</p>
-                <br>
-                <button onclick="location.reload()" class="btn">Want to try again!</button>
-                <a href="index.html" class="btn">Choose another level</a>
+                <div id="result">
+                    Hi <span> ${username}</span>,<br><br>
+                    You have answered <span> ${correctAnswer} </span> 
+                    question(s) correctly out of total <span> ${questionLevel.length} 
+                    </span> questions.<br>
+                    Your total score is <span> ${score}</span>.<br><br>
+                    Thanks! <br>
+                    Quiz India Team :)
+                </div>
+                <button onclick="location.reload()" class="btn1">Try again!</button>
+                <a href="index.html" class="btn2">Select different level</a>
             `;
         }
     }

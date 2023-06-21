@@ -7,7 +7,8 @@
 /* Body */
 
 body {
-    background-image: url("../images/backgroundimage.jpg");
+    /*background-image: url("../images/backgroundimage.jpg");*/
+    background-image: linear-gradient(orange, white, green);
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: system-ui,
@@ -66,7 +67,7 @@ p {
 }
 
 .about-quiz {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     text-align: justify;
     padding: 0.5em 1em;
     font-style: italic;
@@ -83,21 +84,26 @@ label {
 }
 
 #yname {
-    font-size: large;
+    font-size: 1.2em;
     border: 1px dotted green;
     border-radius: 4px;
+}
+
+#radiobtn {
+    margin: 0em 5em;
 }
 
 .level {
     font-family: system-ui,
         Arial,
         sans-serif;
-    font-size: large;
+    font-size: 1em;
     font-weight: bold;
     color: white;
     background-color: orange;
     border: 1px solid orange;
     border-radius: 12px;
+    padding: 0.5em 4em;
     margin: 0em 2em 0em 0.5em;
 }
 
@@ -111,7 +117,7 @@ label {
     font-family: system-ui,
         Arial,
         sans-serif;
-    font-size: large;
+    font-size: 1em;
     font-weight: bold;
     color: white;
     background-color: green;
@@ -127,24 +133,46 @@ label {
     border: 1px solid blueviolet;
 }
 
-.btn {
+.btn1 {
     font-family: system-ui,
         Arial,
         sans-serif;
-    font-size: large;
+    font-size: 1em;
     font-weight: bold;
     color: white;
     background-color: green;
     border: 1px solid green;
     border-radius: 12px;
     padding: 0.5em 1em;
-    margin-left: 2em;
+    margin-left: 2.5em;
+    text-decoration: none;
 }
 
-.btn:hover {
+.btn1:hover {
     color: yellow;
     background-color: blueviolet;
     border: 1px solid blueviolet;
+}
+
+.btn2 {
+    font-family: system-ui,
+        Arial,
+        sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+    border-radius: 12px;
+    padding: 0.5em 1em;
+    margin-left: 0.5em;
+    text-decoration: none;
+}
+
+.btn2:hover {
+    color: yellow;
+    background-color: green;
+    border: 1px solid green;
 }
 
 /* Quiz Page */
@@ -159,26 +187,61 @@ label {
     font-weight: bold;
 }
 
-#hello-area {
+span {
     color: green;
     text-transform: capitalize;
-}
-
-#level-area {
-    color: green;
-    text-transform: capitalize;
-}
-
-#score-area {
-    color: green;
 }
 
 .question-area {
-    font-family: system-ui,
-        Arial,
-        sans-serif;
-    font-size: 1.5em;
-    text-align: left;
-    color: green;
+    font-size: 1.2em;
     padding: 1em;
+    margin: 0em 1em;
+}
+
+/* Result area */
+#result {
+    margin: 2em;
+    color: brown;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 1100px) {
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .main-area {
+        margin: 2em 5em 5em 5em;
+    }
+
+    .welcome-line {
+        font-size: 1.5em;
+        padding: 0.5em 0.5em;
+    }
+
+    .about-quiz {
+        font-size: 1em;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    #yname {
+        font-size: 1em;
+    }
+
+    .level {
+        font-size: 0.7em;
+    }
+
+    #startquiz {
+        font-size: 0.7em;
+    }
+
+    .user-info {
+        font-size: 1.2em;
+    }
+
 }
