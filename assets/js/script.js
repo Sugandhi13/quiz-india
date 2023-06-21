@@ -42,7 +42,7 @@ let easyQuest = [
         question: "Name the national bird of India?",
         opt_a: 'Eagle',
         opt_b: 'Peacock',
-        opt_c: 'sparrow',
+        opt_c: 'Sparrow',
         opt_d: 'Pigeon',
         rightAnswer: 'opt_b'
     },

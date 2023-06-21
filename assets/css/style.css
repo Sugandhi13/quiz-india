@@ -7,10 +7,11 @@
 /* Body */
 
 body {
-    /*background-image: url("../images/backgroundimage.jpg");*/
-    background-image: linear-gradient(orange, white, green);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background: linear-gradient(orange, white, green);
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    width: 100vw;
     font-family: system-ui,
         Arial,
         sans-serif;
@@ -242,6 +243,53 @@ span {
 
     .user-info {
         font-size: 1.2em;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .welcome-line {
+        font-size: 1.5em;
+        padding: 0.5em 0.5em;
+    }
+
+    .about-quiz {
+        font-size: 0.8em;
+    }
+
+    label {
+        font-size: 1.5em;
+    }
+
+    #yname {
+        font-size: 1.5em;
+    }
+
+    .level {
+        font-size: 1.5em;
+    }
+
+    #startquiz {
+        font-size: 1.5em;
+    }
+
+    .user-info {
+        font-size: 1.5em;
+    }
+
+    .question-area {
+        font-size: 1.5em;
     }
 
 }
