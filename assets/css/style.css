@@ -45,6 +45,11 @@ span {
     text-transform: capitalize;
 }
 
+.error-page {
+    font-size: 5em;
+    text-align: center;
+}
+
 /* index page css settings */
 
 .main-area {
