@@ -233,8 +233,12 @@ span {
 
 @media (max-width: 320px) {
     header {
-        font-family: 'Open Sans',
-            sans-serif;
+        font-family: Cambria,
+            Cochin,
+            Georgia,
+            Times,
+            'Times New Roman',
+            serif;
         font-size: 0.5em;
         padding: 0.5em 0em;
     }
@@ -244,6 +248,12 @@ span {
 @media (max-width: 480px) {
 
     header {
+        font-family: Cambria,
+            Cochin,
+            Georgia,
+            Times,
+            'Times New Roman',
+            serif;
         font-size: 2em;
         padding-top: 0.5em;
         padding-left: 5%;
