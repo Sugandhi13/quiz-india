@@ -2,9 +2,15 @@
 
 Quiz India project is developed with idea of creating a website for people fun and let them discover how much you know about a beautiful, historical rich, culturally diverse country called INDIA. The website contains a game that have 3 levels 'Easy', 'Medium' and 'Hard'. Each level consist of 5 unique questions about India. When the user give correct answer of a question it will add 10 points to the users score. Whereas for every incorrect answer the user will loose 5 points. By default, the game will start from 'Easy' level. But the user have option to choose either 'Medium' or 'Hard' difficulty levels as well. There is no limit how many times a user can restart this game or a level of game.
 
+[Homepage-Image-AmIResponsible](/assets/images/quizindiahomepage.jpg)
+
+[Quizpage-Image-AmIResponsible](/assets/images/quizindiaquizpage.jpg)
+
+The Quiz India site is live, the links can be found [HERE](https://sugandhi13.github.io/quiz-india/)
+
 # Table of contents
 
-- [Quiz India](#Quiz India)
+- [Quiz India](#quiz-india)
 - [Table of contents](#table-of-contents)
 - [Design](#design)
     - [Text \& Background color](#text--background-color)
@@ -12,26 +18,22 @@ Quiz India project is developed with idea of creating a website for people fun a
   - [Common Features](#common-features)
     - [Languages Used](#languages-used)
     - [Navigation](#navigation)
-    - [Footer](#footer)
   - [Home Page](#home-page)
-    - [Main Image](#main-image)
-    - [Home Page](#home-page-1)
-    - [Attractions Page](#attractions-page)
-    - [Contact Us Page](#contact-us-page)
-    - [Confirmation Page](#confirmation-page)
+    - [Landing Page](#landing-page)
+    - [Quiz Page](#quiz-page)
+    - [Results Message](#results-message)
 - [Testing](#testing)
+    - [Manual Testing](#manual-testing)
 - [Validator Testing](#validator-testing)
     - [HTML](#html)
     - [CSS](#css)
+    - [JavaScript](#javascript)
     - [Lighthouse](#lighthouse)
 - [Unfixed Bugs](#unfixed-bugs)
 - [Libraries \& Programs Used](#libraries--programs-used)
 - [Deployment](#deployment)
 - [Credits](#credits)
 - [Content](#content)
-- [Media](#media)
-    - [Images](#images)
-    - [Google Map](#google-map)
 
 # Design
 
@@ -62,7 +64,7 @@ There also a way to go back on quiz.html page when a user click on 'Try again!' 
 
 A Main page consist of information about the quiz and rules about how the scores calculations will be performed. This page also has an input box, where the user has to enter its name, along with 3 options ('Easy', 'Medium' and 'Hard') level of difficulty of quiz to choose from. Once the user clicks the 'Start Quiz' button the user will be routed to next page where the question will be displayed.
 
-![Main-Image](assets/images/mainimage.jpg)
+![Homepage-Image](/assets/images/homepage.jpg)
 
 ### Quiz Page
 
@@ -70,19 +72,18 @@ This page 2 features explained below.
 
 - **User Info Section** : This section display the Username, difficulty level of the quiz choosen by user and current score of user. 
 - **Question & Answer Area** : This section displays one question at a time with 4 options to user. Out of 4 one option has correct answer and 3 incorrect. Once user select an option and click on 'Submit' button. The quiz move to next question with 4 options with respect to that question and the cycle continues. If the user has answered correctly then the score will be updated with +10 points. But, if the users answers incorrectly the score will updated with -5 points. If the user try to click on Submit button without selecting any option an alert message will be shown to user to select any one option to move forward with quiz.
-- **Results Message** : 
 
-![About-City](assets/images/whyamritsar.jpg)
+![Quizpage-Image](/assets/images/quizpage.jpg)
 
 ### Results Message
 
 Once all 5 questions were answered by user. Then the result message will be displayed to the user. In this message user will get information like how many correct answers he has given and total score he has socred based upon calculation described above.
 
-![Attractions-1](assets/images/attractions1.jpg)
+![Result-Message-Image](/assets/images/resultpage.jpg)
 
 # Testing
 
-The site has been tested on a variety of mobile devices (iphone (iOS), OnePlus(Android)) as well as different web browsers (Chrome, Internet Explorer, Safari) and all links, information about quiz, questions & options has functioned as it should. All input fields and options are required to be filled/clicked by the user before submitting.
+The site has been tested on a variety of mobile devices (iphone (iOS), OnePlus(Android)) as well as different web browsers (Chrome, Microsoft Edge) and all links, information about quiz, questions & options has functioned as it should. All input fields and options are required to be filled/clicked by the user before submitting.
 
 I personally tested the site extensively with Google Chrome dev tools to ensure the site works responsively not only on mobile devices but also on medium to larger screens.
 
@@ -94,7 +95,7 @@ Some improvements are done on different HTML pages after testing them on W3C Val
 
 ### Manual Testing
 | Test Case | Expected Results | Results |
-| ----------- | ----------- |
+| ----------- | ----------- | ----------- |
 | Open landing page | An event listener waits for the DOM to finish loading before running the quiz. The first question and three options are displayed. The theme song does not start playing. | As Expected |
 | Click on the Start Quiz button with providing any input in Name box | An error message should display and ask the user to fill that field. | As Expected |
 | Choose any other difficulty level like 'Medium' or 'Hard' instead of default 'Easy' | When user Choose any other difficulty level like 'Medium' or 'Hard' instead of default 'Easy' option the questions should show from respective difficulty levels. | As Expected |
@@ -111,13 +112,19 @@ Some improvements are done on different HTML pages after testing them on W3C Val
 
 No errors were returned when passing through the official W3C validator.
 
-![HTML](assets/images/w3cvalidatorresults.jpg)
+![HTML](/assets/images/w3cvalidator.jpg)
 
 ### CSS
 
 No errors were found when passing through the official W3C CSS (Jigsaw) validator.
 
-![css](assets/images/cssvalidatorresults.jpg)
+![css](/assets/images/cssvalidationresults.jpg)
+
+### JavaScript
+
+No errors were found when passing through the official JavaScript (JSHint) validator.
+
+![JavaScript](/assets/images/jshint.jpg)
 
 ### Lighthouse
 
@@ -125,11 +132,11 @@ The page achieved great performance on mobile and desktop.
 
 - **Desktop**:
   
-  ![Desktop](assets/images/lighthousereportdesktop.jpg)
+  ![Desktop](/assets/images/lighthousereportdesktop.jpg)
 
 - **Mobile**:
   
-  ![Mobile](assets/images/lighthousereportmobile.jpg)
+  ![Mobile](/assets/images/lighthousereportmobile.jpg)
 
 # Unfixed Bugs
 
