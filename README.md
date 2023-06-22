@@ -92,6 +92,19 @@ Applying media queries has been the biggest challenge during this project.
 
 Some improvements are done on different HTML pages after testing them on W3C Validator.
 
+### Manual Testing
+| Test Case | Expected Results | Results |
+| ----------- | ----------- |
+| Open landing page | An event listener waits for the DOM to finish loading before running the quiz. The first question and three options are displayed. The theme song does not start playing. | As Expected |
+| Click on the Start Quiz button with providing any input in Name box | An error message should display and ask the user to fill that field. | As Expected |
+| Choose any other difficulty level like 'Medium' or 'Hard' instead of default 'Easy' | When user Choose any other difficulty level like 'Medium' or 'Hard' instead of default 'Easy' option the questions should show from respective difficulty levels. | As Expected |
+| Click on Start Quiz button | A new page should open with showing Player Name, the level of difficulty the player has selected and default score should be 0. Also, none of the option should be checked by default. | As Expected |
+| Click on Submit button without choosing any option | A pop up message should appear and ask the user to select a valid option to move forward in the quiz | As Expected |
+| Choose a option and click on Submit button | If player has answered correctly then 10 points should be added in the score. But, if player has answered incorrect question then 5 points should be reduced from the score. Also make sure the new question should display on the screen with 4 new option with respect to new question | As Expected |
+| Click on the Submit button after 5th question | The quiz area is cleared. The results message should display with correctly calculated total score and showing details about how many questions user have answered correctly out of total 5 questions | As Expected |
+| Click on the Try Again! button | The quiz should restart for the same difficulty level. | As Expected |
+| Click on the Select different level button | The landing page should display with option for player to change the difficulty level after entering his name. | As Expected |
+
 # Validator Testing
 
 ### HTML
@@ -120,68 +133,46 @@ The page achieved great performance on mobile and desktop.
 
 # Unfixed Bugs
 
-I've struggled with Media queries and how to handle website on different devices. This website currently looks great on desktop borwsers but have issues with alignments on other media devices.
+I've struggled with alignment all buttons with same width either radio or submit buttons. 
 
 I will try to improve further on this in coming days and considering it as a challenge to handle.
 
 # Libraries & Programs Used
 
 - **Github**: Store Repository
-- **Codeanywhere**: Create the html and css files
+- **Codeanywhere**: Create the html, CSS and JavaScript files
 - **Google Chrome Dev Tools**: To aid the initial styling for media queries and testing at various screen sizes
 - **Microsoft Edge**: Site testing on an alternative browser
 - **Snipping Tool**: To take screenshot for images of various results
 - **Am I Responsive**: To ensure website looks good on different devices
 - **W3C Validator**: To validate HMTL pages
-- **W3C CSS Validator**: To validte CSS
+- **W3C CSS Validator**: To validate CSS
+- **JSHint**: To validate JavaScript
 
 # Deployment
 
 The site is deployed to GitHub pages. The steps to deploy are as follows:
 
-- In the GitHub repository, select the amritsar-tourism project from left pane 'Top Repositories' section
+- In the GitHub repository, select the quiz-india project from left pane 'Top Repositories' section
 - Click on Settings tab in navigation menu.
 - Select the 'Pages' tab in the 'Code and Automation' section.
 - From the Build and deployment section, go to source and select 'Deploy from a branch' in drop-down menu.
 - Next select the 'Main' branch under Branch drow-down menu.
 - Once the 'Main' branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-- The live link for the site can be found here - [/sugandhi13.github.io/amritsar-tourism](https://sugandhi13.github.io/amritsar-tourism/)
+- The live link for the site can be found here - [/sugandhi13.github.io/quiz-india](https://sugandhi13.github.io/quiz-india/)
 
 # Credits
 
 I have really enjoyed the Code Institute course up till now, and I am looking forward to the next units of the course. I wanted to thank the Slack Community for their support learning the content and my Mentor Martina for her guidance with this project and assurances that creating a website is not as scary as I initially thought.
 
-As a starting point I looked at the Coders Coffee and Love Running projects.
+As a starting point I looked at the Love Maths projects.
 
-- From the Coders Coffee Project, I got understanding of how to use Codeanywhere and GitHub to develop website.
-- From the Love Running Project, I took inspiration for the header, hero banner, footer and form.
-- Wikipedia and Punjab Tourism websites, I have referred these website to create content on my website.
+- From the Love Maths Project, I took inspiration about how to include JavaScript along with HTML and CSS.
+- Friends Trivia Quiz, My mentor has shared the GitHub repository created by Ila Bura. It helped me in great deal to understand and write JavaScripts functions and handle media queries in better way.
+- W3School and Stackoverflow, I have referred these website to fix various issue that I faced while writing various types of code (CSS/JavaScript) for the website.
 
 # Content
 
-Following websites have been referred to generate the content on Home page along with some sentences included/modified by me to best fit in websites context.
+Following websites have been used as source for quiz questions, answers with multiple options.
 
-- [punjabtourism.punjab.gov.in](https://punjabtourism.punjab.gov.in/destination-amritsar.php)
-- [wikipedia.org](https://en.wikipedia.org/wiki/Amritsar)
-- [indiahotels.com](http://www.indiahotels.com/amritsar/amritsar-culture.html)
-
-# Media
-
-### Images
-
-Various websites are referred to collect images used in this website. Original source links can be found below.
-
-- Main Image - [holidify.com](https://www.holidify.com/places/amritsar/sightseeing-and-things-to-do.html)
-- Gobindgarh Fort Image - [holidify.com](https://www.holidify.com/places/amritsar/gobindgarh-fort-sightseeing-120918.html)
-- Confirmation Page Image - [historypak.com](https://historypak.com/punjabi-culture-2/)
-- Ram Tirath Image - [ffo.gov.in](https://ffo.gov.in/locations/location-information/69)
-- Maharaja Ranjit Singh Muesum Image - [mouthshut.com](https://www.mouthshut.com/product-reviews/Maharaja-Ranjit-Singh-Museum-Amritsar-Photos-925078676)
-- Sadda Pind Image - [googleusercontent.com](https://lh5.googleusercontent.com/p/AF1QipP6i60UYzdaQdFCtZVGE9TcA-7UzIQUYu8YjXRw=w600-h321-p-k-no)
-- Durgiana Temple Image - [googleusercontent.com](https://lh3.googleusercontent.com/proxy/kcFhudzDfjqLkTJbn-SGOG-50LFYbPNc3HZoYVAjLY442AyfMRXRlicCZyBHK2mlF8K9zPG-JafBTyOhTu4HWQjvv-cImvv_xTvNkBZXCQcbxGZ-grX7Vm-hq5WHR-n5a5ruIT740JhPa6k2sB_u2gobanyMOg=s680-w680-h510)
-- Some Images on Attractions Page - [fabhotels.com](https://www.fabhotels.com/blog/historical-places-in-amritsar/)
-
-### Google Map
-
-Google Map API is created and used from Google maps.
-
-- Google Map API - [maps.google.com](https://goo.gl/maps/g1H9qGUC1iNNKUoq8)
+- [firstcry.com](https://www.firstcry.com/intelli/articles/50-must-know-gk-questions-about-india-with-answers-for-kids/)
