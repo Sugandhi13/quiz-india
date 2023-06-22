@@ -1,19 +1,20 @@
-const quiz = document.getElementById('quiz');
-const chooseAnswer = document.getElementById('chooseAnswer');
-const answerEls = document.querySelectorAll('.answer');
-const questionEl = document.getElementById('question');
-const a_text = document.getElementById('a_text');
-const b_text = document.getElementById('b_text');
-const c_text = document.getElementById('c_text');
-const d_text = document.getElementById('d_text');
-const startQuiz = document.getElementById('startquiz');
-let currentQuestionIndex = 0;
-let score = 0;
-let correctAnswer = 0;
-let choice;
-let username;
+/* Declarations of global variables */
+const quiz = document.getElementById('quiz'); // Variable for the question
+const answerEls = document.querySelectorAll('.answer'); // Variable to list all answers
+const questionEl = document.getElementById('question'); // Variable for the question
+const a_text = document.getElementById('a_text'); // Variable for the option a
+const b_text = document.getElementById('b_text'); // Variable for the option b
+const c_text = document.getElementById('c_text'); // Variable for the option c
+const d_text = document.getElementById('d_text'); // Variable for the option d
+const startQuiz = document.getElementById('startquiz'); // Variable for the start quiz button
+let currentQuestionIndex = 0; // Variable to store the question index
+let score = 0; // Variable to store the score
+let correctAnswer = 0; // Variable to store the correct answer count
+let choice = null; // Variable to store the choice opted by user
+let username = null; // Variable to store the username
 
-
+/* Array consisting a set of 5 easy level difficulty question 
+    and their corresponding possible options */
 let easyQuest = [
     {
         question: "Which wonder of the world is in India?",
@@ -58,6 +59,8 @@ let easyQuest = [
 
 ];
 
+/* Array consisting a set of 5 medium level difficulty question 
+    and their corresponding possible options */
 let mediumQuest = [
     {
         question: "Which is the national sport of India?",
@@ -101,6 +104,8 @@ let mediumQuest = [
     },
 ];
 
+/* Array consisting a set of 5 hard level difficulty question 
+    and their corresponding possible options */
 let hardQuest = [
     {
         question: "Who was the first to discover India?",
@@ -144,6 +149,7 @@ let hardQuest = [
     },
 ];
 
+// Event listener: wait for the DOM to finish loading before running the quiz
 document.addEventListener("DOMContentLoaded", function () {
     const params = new URLSearchParams(window.location.search);
     document.getElementById("hello-area").innerHTML = params.get('yname');
@@ -154,6 +160,11 @@ document.addEventListener("DOMContentLoaded", function () {
     runQuiz(choice);
 });
 
+/** 
+ * Function to start the quiz with question index and initial score set to 0 
+ *  then call the function to show the question based upon the level of 
+ *  difficulty selected by the user. 
+ */
 function runQuiz(level) {
     if (level === 'easy') {
         let easyQuestion = easyQuest[currentQuestionIndex];
@@ -169,6 +180,10 @@ function runQuiz(level) {
     }
 }
 
+/** 
+ * Function to display the question and available options 
+ *  for the user to select.
+ */
 function displayQuestion(currentQuestion) {
     unselectAnswers();
     questionEl.innerText = currentQuestion.question;
@@ -178,10 +193,17 @@ function displayQuestion(currentQuestion) {
     d_text.innerText = currentQuestion.opt_d;
 }
 
+/**
+ * Function to unselect answers on page reload.
+ */
 function unselectAnswers() {
     answerEls.forEach(answerEl => answerEl.checked = false);
 }
 
+/**
+ * Function to check the correct answer based upon the answer submitted by 
+ * the user and correct answer stored in our system and returns bool value.
+ */
 function checkCorrectAnswer() {
     let answer;
     answerEls.forEach(answerEl => {
@@ -192,6 +214,16 @@ function checkCorrectAnswer() {
     return answer;
 }
 
+/**
+ * Event listener with click event for the selection of the answer and
+ * perform calculation for score and correct answer count. Increase score by 10 
+ * points for each correct answer and decrease score by 5 points for each 
+ * incorrect answer.
+ * It also keep the game running by calling runQuiz() function and increasing
+ * question index number. 
+ * Once all questions are displayed. This function show the final results message
+ * to the user and give options to restart the gave or try again the same level.
+ */
 startQuiz.addEventListener('click', function () {
     const answer = checkCorrectAnswer();
     if (answer) {
