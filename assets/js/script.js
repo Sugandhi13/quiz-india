@@ -243,6 +243,7 @@ startQuiz.addEventListener('click', function () {
             correctAnswer++;
         } else {
             score = score - 5;
+            alert("Opps! Incorrect answer. The correct answer is : " + questionLevel[currentQuestionIndex][questionLevel[currentQuestionIndex].rightAnswer] +".");
         }
         currentQuestionIndex++;
         if (currentQuestionIndex < questionLevel.length) {

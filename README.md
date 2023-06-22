@@ -22,6 +22,7 @@ The Quiz India site is live, the links can be found [HERE](https://sugandhi13.gi
     - [Landing Page](#landing-page)
     - [Quiz Page](#quiz-page)
     - [Results Message](#results-message)
+    - [404 Page](#404-page)
 - [Testing](#testing)
     - [Manual Testing](#manual-testing)
 - [Validator Testing](#validator-testing)
@@ -71,7 +72,7 @@ A Main page consist of information about the quiz and rules about how the scores
 This page have 2 features explained below.
 
 - **User Info Section** : This section display the Username, difficulty level of the quiz choosen by user and current score of user. 
-- **Question & Answer Area** : This section displays one question at a time with 4 options to user. Out of 4 one option has correct answer and 3 incorrect. Once user select an option and click on 'Submit' button. The quiz move to next question with 4 options with respect to that question and the cycle continues. If the user has answered correctly then the score will be updated with +10 points. But, if the users answers incorrectly the score will updated with -5 points. If the user try to click on Submit button without selecting any option an alert message will be shown to user to select any one option to move forward with quiz.
+- **Question & Answer Area** : This section displays one question at a time with 4 options to user. Out of 4 one option has correct answer and 3 incorrect. Once user select an option and click on 'Submit' button. The quiz move to next question with 4 options with respect to that question and the cycle continues. If the user has answered correctly then the score will be updated with +10 points. But, if the users answers incorrectly the score will updated with -5 points and an alert is generated that shows correct answer to the user. If the user try to click on Submit button without selecting any option an alert message will be shown to user to select any one option to move forward with quiz.
 
 ![Quizpage-Image](/assets/images/quizpage.jpg)
 
@@ -80,6 +81,11 @@ This page have 2 features explained below.
 Once all 5 questions were answered by user. Then the result message will be displayed to the user. In this message user will get information like how many correct answers he has given and total score he has socred based upon calculation described above. The user gets two choices (1) Try Again - it wil route the user on quiz with same difficulty level as he has last selected. (2) Select different level - it will route the user to landing page (index.html) where he can restart the quiz with same or new difficulties level. 
 
 ![Result-Message-Image](/assets/images/resultpage.jpg)
+
+### 404 Page
+A 404.html page notifies the user with the following message:"Oops! Nothing to see here! Go back to the homepage". The word "homepage" is clickable and redirects the user to the landing (index.html) page of the Quiz India.
+
+![Error-Message-Image](/assets/images/errorpage.jpg)
 
 # Testing
 
@@ -99,12 +105,15 @@ Some improvements are done on HTML pages after testing them on W3C Validator.
 | Open Quiz page | An event listener waits for the DOM to finish loading before running the quiz. The first question and 4 options are displayed. | As Expected |
 | Click on the Start Quiz button without providing any input in Name box | An error message should display and ask the user to fill that field. | As Expected |
 | Choose any other difficulty level like 'Medium' or 'Hard' instead of default 'Easy' | When user Choose any other difficulty level like 'Medium' or 'Hard' instead of default 'Easy' option the questions should show from respective difficulty levels. | As Expected |
+| Enter only Alphabets and single space in Name input box | An error message should display and ask the user to fill valid data in field | As Expected |
 | Click on Start Quiz button | A new page should open with showing Player Name, the level of difficulty the player has selected and default score should be 0. Also, none of the option should be checked by default. | As Expected |
 | Click on Submit button without choosing any option | A pop up message should appear and ask the user to select a valid option to move forward in the quiz | As Expected |
 | Choose a option and click on Submit button | If player has answered correctly then 10 points should be added in the score. But, if player has answered incorrect question then 5 points should be reduced from the score. Also make sure the new question should display on the screen with 4 new option with respect to new question | As Expected |
+| Choose an incorrect option and click on Submit button | If player has answered incorrectly then an alert message should be generate that shows correct answer of the question | As Expected |
 | Click on the Submit button after 5th question | The quiz area is cleared. The results message should display with correctly calculated total score and showing details about how many questions user have answered correctly out of total 5 questions | As Expected |
 | Click on the Try Again! button | The quiz should restart for the same difficulty level. | As Expected |
 | Click on the Select different level button | The landing page should display with option for player to change the difficulty level after entering his name. | As Expected |
+| Error (404) Page  | When a user enter an incorrect address of the website. Page 404.html should publish and inform user that no such webpage exsit and contains link to route user to home page | As Expected |
 
 # Validator Testing
 
@@ -148,6 +157,7 @@ I will try to improve further on this in coming days and considering it as a cha
 
 - **Github**: Store Repository
 - **Codeanywhere**: Create the html, CSS and JavaScript files
+- **Favicon.io** - To create the favicon.
 - **Google Chrome Dev Tools**: To aid the initial styling for media queries and testing at various screen sizes
 - **Microsoft Edge**: Site testing on an alternative browser
 - **Snipping Tool**: To take screenshot for images of various results

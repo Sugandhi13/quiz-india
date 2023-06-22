@@ -41,7 +41,7 @@
         <div class="your-name">
             <form id="username" action="quiz.html" method="GET">
                 <label for="yname">Name</label>
-                <input type="text" id="yname" name="yname" required><br><br>
+                <input type="text" id="yname" name="yname" pattern="^[a-zA-Z]+( [a-zA-Z]+)*$" required><br><br>
                 <div id="radiobtn">
                     <input name="level" id="easy" type="radio" value="easy" checked>
                     <label for="easy" class="level">Easy</label><br><br>
