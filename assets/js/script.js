@@ -191,6 +191,7 @@ function displayQuestion(currentQuestion) {
     b_text.innerText = currentQuestion.opt_b;
     c_text.innerText = currentQuestion.opt_c;
     d_text.innerText = currentQuestion.opt_d;
+    document.getElementById("score-area").innerHTML = score;
 }
 
 /**
@@ -267,5 +268,4 @@ startQuiz.addEventListener('click', function () {
     else {
         alert("Please choose a valid option!");
     }
-    document.getElementById("score-area").innerHTML = score;
 });
