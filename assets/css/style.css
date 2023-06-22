@@ -239,27 +239,42 @@ span {
     }
 
     .about-quiz {
-    font-size: 1em;
+        font-size: 1em;
     }
+
     label {
-        font-size: 1.5em;
-        text-align: left;
-        }
+        font-size: 1em;
+    }
+
     #yname {
-     font-size: 0.8em;
-     
+        font-size: 0.8em;
+
     }
 
     .level {
-         font-size: 0.8em;
+        font-size: 1em;
+        padding: 2em 0.1em 0em 0.1;
+        margin: 0.5em;
+
     }
+
     #startquiz {
         font-size: 1em;
     }
+
     .user-info {
         font-size: 1.2em;
-        }
+
+    }
+
     .question-area {
-            font-size: 1em;
-        }
+        font-size: 1em;
+    }
+
+    #a_text {
+        font-size: 1em;
+        padding: 0em 1.2em 0.5em 1em;
+    }
+
+    .
 }
