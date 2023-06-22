@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 /* Declarations of global variables */
 const quiz = document.getElementById('quiz'); // Variable for the question
 const answerEls = document.querySelectorAll('.answer'); // Variable to list all answers
