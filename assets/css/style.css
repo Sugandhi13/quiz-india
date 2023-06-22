@@ -224,6 +224,22 @@ span {
     }
 }
 
+@media (max-width: 540px) {
+    .level{
+        font-size: 1em;
+        padding: 0.5em 0em;
+    }
+}
+
+@media (max-width: 320px) {
+    header {
+        font-family: 'Open Sans',
+            sans-serif;
+        font-size: 1em;
+        padding: 0.5em 0em;
+    }
+}
+
 /* For smaller screens size from 480px wide */
 @media (max-width: 480px) {
 
@@ -231,7 +247,6 @@ span {
         font-size: 2.5em;
         padding-top: 0.5em;
         padding-left: 5%;
-
     }
 
     .main-area {
