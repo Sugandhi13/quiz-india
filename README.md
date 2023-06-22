@@ -2,9 +2,9 @@
 
 Quiz India project is developed with idea of creating a website for people fun and let them discover how much you know about a beautiful, historical rich, culturally diverse country called INDIA. The website contains a game that have 3 levels 'Easy', 'Medium' and 'Hard'. Each level consist of 5 unique questions about India. When the user give correct answer of a question it will add 10 points to the users score. Whereas for every incorrect answer the user will loose 5 points. By default, the game will start from 'Easy' level. But the user have option to choose either 'Medium' or 'Hard' difficulty levels as well. There is no limit how many times a user can restart this game or a level of game.
 
-[Homepage-Image-AmIResponsible](/assets/images/quizindiahomepage.jpg)
+![Homepage-Image-AmIResponsible](/assets/images/quizindiahomepage.jpg)
 
-[Quizpage-Image-AmIResponsible](/assets/images/quizindiaquizpage.jpg)
+![Quizpage-Image-AmIResponsible](/assets/images/quizindiaquizpage.jpg)
 
 The Quiz India site is live, the links can be found [HERE](https://sugandhi13.github.io/quiz-india/)
 
