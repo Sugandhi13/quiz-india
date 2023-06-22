@@ -39,7 +39,7 @@ The Quiz India site is live, the links can be found [HERE](https://sugandhi13.gi
 
 ### Text & Background color
 
-Indian national flag have 3 main colors as Orange, White and Green. Hence, the color theme of my website is based upon the same colors contrasts. We have choosen the background color of website cosist of blend of these 3 colors, similar to the flag have Orange at top, White in the middle and Green at the bottom. The main area is kept as light blue to support text in Orange for headers and paragraps in green color. Buttons on Index.html and Quiz.html page has Green colored background with Options having Orange colored background. When a user hover over the button some effects have been added with additional use of Voilet color. Try again button on results page have Green colored background whereas the link to restart the quiz is in voilet color background with some effect when user hover over the button. The text on results page consist of brown color with all fields that are dynamic like username, score and correct answer for total question in Green color.
+Indian national flag have 3 main colors as Orange, White and Green. Hence, the color theme of my website is based upon the same colors contrasts. We have choosen the background color of website consist of blend of these 3 colors, similar to the flag have Orange at top, White in the middle and Green at the bottom. The main area is kept as light blue to support text in Orange for headers and paragraps in green color. Buttons on Index.html and Quiz.html page has Green colored background with Options having Orange colored background. When a user hover over the button some effects have been added with additional use of Voilet color. Try again button on results page have Green colored background whereas the link to restart the quiz is in voilet color background with some effect when user hover over the button. The text on results page consist of brown color with all fields that are dynamic like username, score and correct answer for total question in Green color.
 
 # Features
 
@@ -77,7 +77,7 @@ This page have 2 features explained below.
 
 ### Results Message
 
-Once all 5 questions were answered by user. Then the result message will be displayed to the user. In this message user will get information like how many correct answers he has given and total score he has socred based upon calculation described above. The user gets two choices (1) Try Again - it wil route the user on quiz with same difficulty level as he has last selected. (2) Select different level - it will route the use to landing page (index.html) where he can restart the quiz with same or new difficulties level. 
+Once all 5 questions were answered by user. Then the result message will be displayed to the user. In this message user will get information like how many correct answers he has given and total score he has socred based upon calculation described above. The user gets two choices (1) Try Again - it wil route the user on quiz with same difficulty level as he has last selected. (2) Select different level - it will route the user to landing page (index.html) where he can restart the quiz with same or new difficulties level. 
 
 ![Result-Message-Image](/assets/images/resultpage.jpg)
 
