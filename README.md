@@ -1,6 +1,6 @@
 # Quiz India
 
-Quiz India project is developed with idea of creating a website for people fun and let them discover how much you know about a beautiful, historical rich, culturally diverse country called INDIA. The website contains a game that have 3 levels 'Easy', 'Medium' and 'Hard'. Each level consist of 5 unique questions about India. When the user give correct answer of a question it will add 10 points to the users score. Whereas for every incorrect answer the user will loose 5 points. By default, the game will start from 'Easy' level. But the user have option to choose either 'Medium' or 'Hard' difficulty levels as well. There is no limit how many times a user can restart this game or a level of game.
+Quiz India project is developed with idea of creating a website for people fun and let them discover how much they know about a beautiful, historical rich, culturally diverse country called INDIA. The website contains a game that have 3 levels 'Easy', 'Medium' and 'Hard'. Each level consist of 5 unique questions about India. When the user give correct answer of a question it will add 10 points to the users score. Whereas for every incorrect answer the user will loose 5 points. By default, the game will start from 'Easy' level. But the user have option to choose either 'Medium' or 'Hard' difficulty levels as well. There are no limit how many times a user can restart this game or a level of game.
 
 ![Homepage-Image-AmIResponsible](/assets/images/quizindiahomepage.jpg)
 
@@ -39,7 +39,7 @@ The Quiz India site is live, the links can be found [HERE](https://sugandhi13.gi
 
 ### Text & Background color
 
-Indian national flag have 3 main colors as Orange, White and Green. Hence, color them of my website is to based upon Orange, White and Green colors contrast. We have choosen background color a page cosist of blend of these 3 colors similar to the flag have have Orange at top, White in the middle and Green at the bottom. The main area is kept as light blue to support text in Orange for headers and paragraps in green color. Buttons on Index.html and Quiz.html page has Green colored background with Options having Orange colored background. When a user hover over the button some effects have been added with additional use of Voilet color. Try again button on results page have Green colored background whereas the link to restart the quiz is in voilet color background with some effect when user hover over the button. The text on results page consist of brown color with all fields that are dynamic like username, score and correct answer for total question in Green color.
+Indian national flag have 3 main colors as Orange, White and Green. Hence, the color theme of my website is based upon the same colors contrasts. We have choosen the background color of website cosist of blend of these 3 colors, similar to the flag have Orange at top, White in the middle and Green at the bottom. The main area is kept as light blue to support text in Orange for headers and paragraps in green color. Buttons on Index.html and Quiz.html page has Green colored background with Options having Orange colored background. When a user hover over the button some effects have been added with additional use of Voilet color. Try again button on results page have Green colored background whereas the link to restart the quiz is in voilet color background with some effect when user hover over the button. The text on results page consist of brown color with all fields that are dynamic like username, score and correct answer for total question in Green color.
 
 # Features
 
@@ -54,21 +54,21 @@ Indian national flag have 3 main colors as Orange, White and Green. Hence, color
 ### Navigation
 
 In my website I've 2 pages but the navigation for them is allowed only 2 ways.
-- 1st after clicking on 'Start Quiz' button on index.html page.
-- 2nd option is after clicking on 'Select different level' button under result message on quiz.html page.
+- 1st is when a user click on 'Start Quiz' button on index.html page. The new page (quiz.html) opens.
+- 2nd option is when a user click on 'Select different level' button under result message on quiz.html page. The index.html page opens.
 There also a way to go back on quiz.html page when a user click on 'Try again!' button under result message.
 
 ## Home Page
 
 ### Landing Page
 
-A Main page consist of information about the quiz and rules about how the scores calculations will be performed. This page also has an input box, where the user has to enter its name, along with 3 options ('Easy', 'Medium' and 'Hard') level of difficulty of quiz to choose from. Once the user clicks the 'Start Quiz' button the user will be routed to next page where the question will be displayed.
+A Main page consist of information about the quiz and rules about how the scores calculations will be performed. This page also has an input box, where the user have to enter its name, along with 3 options ('Easy', 'Medium' and 'Hard') level of difficulty of quiz to choose from. Once the user clicks the 'Start Quiz' button the user will be routed to next page where the question will be displayed.
 
 ![Homepage-Image](/assets/images/homepage.jpg)
 
 ### Quiz Page
 
-This page 2 features explained below.
+This page have 2 features explained below.
 
 - **User Info Section** : This section display the Username, difficulty level of the quiz choosen by user and current score of user. 
 - **Question & Answer Area** : This section displays one question at a time with 4 options to user. Out of 4 one option has correct answer and 3 incorrect. Once user select an option and click on 'Submit' button. The quiz move to next question with 4 options with respect to that question and the cycle continues. If the user has answered correctly then the score will be updated with +10 points. But, if the users answers incorrectly the score will updated with -5 points. If the user try to click on Submit button without selecting any option an alert message will be shown to user to select any one option to move forward with quiz.
@@ -77,7 +77,7 @@ This page 2 features explained below.
 
 ### Results Message
 
-Once all 5 questions were answered by user. Then the result message will be displayed to the user. In this message user will get information like how many correct answers he has given and total score he has socred based upon calculation described above.
+Once all 5 questions were answered by user. Then the result message will be displayed to the user. In this message user will get information like how many correct answers he has given and total score he has socred based upon calculation described above. The user gets two choices (1) Try Again - it wil route the user on quiz with same difficulty level as he has last selected. (2) Select different level - it will route the use to landing page (index.html) where he can restart the quiz with same or new difficulties level. 
 
 ![Result-Message-Image](/assets/images/resultpage.jpg)
 
@@ -89,15 +89,15 @@ I personally tested the site extensively with Google Chrome dev tools to ensure 
 
 One of the biggest problems I encountered from the beginning handling css on different webpages. Then I took help from Love Math project as well as w3school and stackoverflow websites (mentioned in credits as well).
 
-Applying media queries has been the biggest challenge during this project.
+Writing JavaScript functions to display 1 question at a time on the quiz page was the biggest challenge during this project. I have referred various code available on Stackoverflow website as well as couple of github project shared by my mentor "Martina Terlevic". With the help of all those code I am able to write the best fit code as per my current understanding of JavaScript.
 
-Some improvements are done on different HTML pages after testing them on W3C Validator.
+Some improvements are done on HTML pages after testing them on W3C Validator.
 
 ### Manual Testing
 | Test Case | Expected Results | Results |
 | ----------- | ----------- | ----------- |
-| Open landing page | An event listener waits for the DOM to finish loading before running the quiz. The first question and three options are displayed. The theme song does not start playing. | As Expected |
-| Click on the Start Quiz button with providing any input in Name box | An error message should display and ask the user to fill that field. | As Expected |
+| Open Quiz page | An event listener waits for the DOM to finish loading before running the quiz. The first question and 4 options are displayed. | As Expected |
+| Click on the Start Quiz button without providing any input in Name box | An error message should display and ask the user to fill that field. | As Expected |
 | Choose any other difficulty level like 'Medium' or 'Hard' instead of default 'Easy' | When user Choose any other difficulty level like 'Medium' or 'Hard' instead of default 'Easy' option the questions should show from respective difficulty levels. | As Expected |
 | Click on Start Quiz button | A new page should open with showing Player Name, the level of difficulty the player has selected and default score should be 0. Also, none of the option should be checked by default. | As Expected |
 | Click on Submit button without choosing any option | A pop up message should appear and ask the user to select a valid option to move forward in the quiz | As Expected |
