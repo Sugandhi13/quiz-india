@@ -78,7 +78,7 @@ let mediumQuest = [
     {
         question: "Who was the first person in India to receive the Nobel Prize?",
         opt_a: 'Har Gobind Khorana',
-        opt_b: 'Chandrasekhara Venkata Raman',
+        opt_b: 'C V Raman',
         opt_c: 'Rabindranath Tagore',
         opt_d: 'Amartya Kumar Sen',
         rightAnswer: 'opt_c'
