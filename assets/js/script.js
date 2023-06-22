@@ -1,4 +1,5 @@
 const quiz = document.getElementById('quiz');
+const chooseAnswer = document.getElementById('chooseAnswer');
 const answerEls = document.querySelectorAll('.answer');
 const questionEl = document.getElementById('question');
 const a_text = document.getElementById('a_text');
@@ -193,7 +194,6 @@ function checkCorrectAnswer() {
 
 startQuiz.addEventListener('click', function () {
     const answer = checkCorrectAnswer();
-    console.log(answer);
     if (answer) {
         let questionLevel;
         if (choice === 'easy') {
@@ -223,10 +223,17 @@ startQuiz.addEventListener('click', function () {
                     Thanks! <br>
                     Quiz India Team :)
                 </div>
-                <button onclick="location.reload()" class="btn1">Try again!</button>
-                <a href="index.html" class="btn2">Select different level</a>
+                <div>
+                    <button onclick="location.reload()" class="btn1">Try again!</button>
+                </div>
+                <div>
+                    <a href="index.html" class="btn2">Select different level</a>
+                </div>
             `;
         }
+    }
+    else {
+        alert("Please choose a valid option!");
     }
     document.getElementById("score-area").innerHTML = score;
 });

@@ -12,10 +12,16 @@
     <header>Quiz India</header>
     <div class="main-area">
         <div id="quiz">
-            <div class="user-info">
-                Player Name: <span id="hello-area"></span>
-                Difficulty Level: <span id="level-area"></span>
-                Score: <span id="score-area"></span>
+            <div id="info">
+                <div class="user-info">
+                    Player Name: <span id="hello-area"></span>
+                </div>
+                <div class="user-info">
+                    Difficulty Level: <span id="level-area"></span>
+                </div>
+                <div class="user-info">
+                    Score: <span id="score-area"></span>
+                </div>
             </div>
             <div class="question-area">
                 <h2 id="question">The question will display here</h2><br>
@@ -28,6 +34,7 @@
                 <input type="radio" name="answer" id="opt_d" class="answer">
                 <label for="opt_d" id="d_text" class="level"></label><br><br>
                 <input type="submit" id="startquiz" value="Submit">
+                <div id="chooseAnswer"></div>
             </div>
         </div>
     </div>

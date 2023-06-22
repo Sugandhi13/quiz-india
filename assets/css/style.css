@@ -55,7 +55,7 @@ p {
 }
 
 .main-area {
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(227, 250, 249);
     opacity: 0.8;
     padding: 0.2em 1em 2em 1em;
     margin: 0em 30em;
@@ -72,6 +72,10 @@ p {
     text-align: justify;
     padding: 0.5em 1em;
     font-style: italic;
+}
+
+.answer {
+    margin: 0.8em;
 }
 
 label {
@@ -91,7 +95,7 @@ label {
 }
 
 #radiobtn {
-    margin: 0em 5em;
+    margin: 0em 2em;
 }
 
 .level {
@@ -105,7 +109,7 @@ label {
     border: 1px solid orange;
     border-radius: 12px;
     padding: 0.5em 4em;
-    margin: 0em 2em 0em 0.5em;
+    margin: 1em;
 }
 
 .level:hover {
@@ -124,7 +128,7 @@ label {
     background-color: green;
     border: 1px solid green;
     border-radius: 12px;
-    padding: 0.5em 1em;
+    padding: 0.5em 4em;
     margin-left: 2em;
 }
 
@@ -145,7 +149,7 @@ label {
     border: 1px solid green;
     border-radius: 12px;
     padding: 0.5em 1em;
-    margin-left: 2.5em;
+    margin: 1em 2.5em;
     text-decoration: none;
 }
 
@@ -166,7 +170,7 @@ label {
     border: 1px solid blueviolet;
     border-radius: 12px;
     padding: 0.5em 1em;
-    margin-left: 0.5em;
+    margin: 1em 2.5em;
     text-decoration: none;
 }
 
@@ -177,14 +181,20 @@ label {
 }
 
 /* Quiz Page */
+#info {
+    background-color: lightblue;
+    padding: 0.5em 0em;
+}
+
 .user-info {
+    margin: 0.2em 0.2em;
     text-align: center;
     font-family: system-ui,
         Arial,
         sans-serif;
     font-size: 1.5em;
-    padding: 0em 5em;
-    color: orange;
+    padding: 0em 2em;
+    color: brown;
     font-weight: bold;
 }
 
@@ -212,7 +222,6 @@ span {
 
 @media (max-width: 1280px) {
     .main-area {
-
         margin: 0.5em 3em 5em 3em;
     }
 }
@@ -228,14 +237,12 @@ span {
     }
 
     .main-area {
-
-        margin: 1em 1.5em 1em 1.5em;
-
+        margin: 1em 1em;
     }
 
     .welcome-line {
-        font-size: 1.4em;
-        padding: 0.5em 0.5em;
+        font-size: 1em;
+        padding: 0.5em;
     }
 
     .about-quiz {
@@ -247,15 +254,23 @@ span {
     }
 
     #yname {
-        font-size: 0.8em;
+        font-size: 1.2em;
+        border: 1px dotted green;
+        border-radius: 4px;
+        margin: 0.3em 1em;
+    }
 
+    #easy, #medium, #hard {
+        margin: 0.5em 0.1em;
+    }
+
+    #radiobtn {
+        margin: 0em 1em;
     }
 
     .level {
         font-size: 1em;
-        padding: 2em 0.1em 0em 0.1;
-        margin: 0.5em;
-
+        padding: 0.5em 1em;
     }
 
     #startquiz {
@@ -263,18 +278,27 @@ span {
     }
 
     .user-info {
-        font-size: 1.2em;
-
+        font-size: 1em;
+        text-align: left;
     }
 
     .question-area {
+        font-size: 0.8em;
+    }
+
+    .answer {
+        margin: 0.5em 0.1em;
+    }
+
+    #result {
+        margin: 2em;
+        color: brown;
         font-size: 1em;
     }
 
-    #a_text {
-        font-size: 1em;
-        padding: 0em 1.2em 0.5em 1em;
+    .btn1,
+    .btn2 {
+        padding: 0.2em;
     }
 
-    .
 }
