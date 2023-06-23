@@ -1,6 +1,6 @@
 # Quiz India
 
-Quiz India project is developed with idea of creating a website for people fun and let them discover how much they know about a beautiful, historical rich, culturally diverse country called INDIA. The website contains a game that have 3 levels 'Easy', 'Medium' and 'Hard'. Each level consist of 5 unique questions about India. When the user give correct answer of a question it will add 10 points to the users score. Whereas for every incorrect answer the user will loose 5 points. By default, the game will start from 'Easy' level. But the user have option to choose either 'Medium' or 'Hard' difficulty levels as well. There are no limit how many times a user can restart this game or a level of game.
+Quiz India project is developed with idea of creating a website for people fun and let them discover how much they know about a beautiful, historical rich, culturally diverse country called INDIA.
 
 ![Homepage-Image-AmIResponsible](/assets/images/quizindiahomepage.jpg)
 
@@ -12,6 +12,12 @@ The Quiz India site is live, the links can be found [HERE](https://sugandhi13.gi
 
 - [Quiz India](#quiz-india)
 - [Table of contents](#table-of-contents)
+- [UX](#ux)
+    - [Site Purpose](#site-purpose)
+    - [Audience](#audience)
+    - [Communication](#communication)
+    - [User Goals](#user-goals)
+    - [Future Goals](#future-goals)
 - [Design](#design)
     - [Text \& Background color](#text--background-color)
 - [Features](#features)
@@ -35,6 +41,23 @@ The Quiz India site is live, the links can be found [HERE](https://sugandhi13.gi
 - [Deployment](#deployment)
 - [Credits](#credits)
 - [Content](#content)
+
+# UX
+
+### Site Purpose
+The website contains a quiz that have 3 levels 'Easy', 'Medium' and 'Hard'. Each level consist of 5 unique questions about India. When the user give correct answer of a question it will add 10 points to the users score. Whereas for every incorrect answer the user will loose 5 points. By default, the game will start from 'Easy' level. But the user have option to choose either 'Medium' or 'Hard' difficulty levels as well. There are no limit how many times a user can restart this game or a level of game. For each question, the user is able to verify immediately if they answered correctly and if that is not the case, the correct answer is displayed with an alert message. Along with the final score, a message is displayed to congratulate the users or encourage them to take the quiz again.
+
+### Audience
+Anyone who has interest in this beautiful. historical rich, culturally diverse country called INDIA and wants to test how much they know about it.
+
+### Communication
+The overall design was kept extremely simple on purpose: the user can can read about the quiz and its rules about how much score is going to be awared for each correct answer as well as what panelty of score they have to pay for incorrect answer. As soon as user enter its name and choose level of difficulty based upon its comfort the quiz will start with respective difficulty level of questions. The visual structure of the quiz makes it intuitive to go through the 5 questions of each level. The user is notified of their final score after answering the last question of each level.
+
+### User Goals
+Challenge the user to test their knowledge and find the correct answers to the quiz. If they wish to retake the quiz at the end to better their score, a button is displayed to start the quiz again with same difficulty level or another button with the option to change the level of difficulty.
+
+### Future Goals
+Add some question with some images, audio or visual capability to engage the user more. The user would also be more engaged to complete the quiz if a timer was displayed with limited amount of time to answer each question.
 
 # Design
 
